@@ -17,6 +17,8 @@ As an example, to find a solution where N = 4, execute
 
 ## Brainstorming
 
+NOTE: This is conceptual and does not reflect the actal implementation.
+
 On an NxN board, with N queens, there must be EXACTLY one per row.
 
 Starting with a N-ary tree with a depth of N, assume that each node of depth 1
