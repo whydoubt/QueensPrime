@@ -7,6 +7,14 @@ Place N queens on an NxN chess board so that none of them attack each other
 queens are in a straight line at ANY angle, so queens on A1, C2 and E3, despite
 not attacking each other, form a straight line at some angle.
 
+## Running
+
+As an example, to find a solution where N = 4, execute
+
+```
+./gradlew run -PN=4
+```
+
 ## Brainstorming
 
 On an NxN board, with N queens, there must be EXACTLY one per row.
