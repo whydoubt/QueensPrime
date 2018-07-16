@@ -14,8 +14,8 @@ public class App {
 
         }
 
-        if (N < 2 || N > 26) {
-            System.err.println("Only a value from 2 to 26 is supported");
+        if (N < 2 || N > 36) {
+            System.err.println("Only a value from 2 to 36 is supported");
             System.exit(1);
         }
 

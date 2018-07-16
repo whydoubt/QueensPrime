@@ -106,7 +106,11 @@ public class Queens {
 
         System.out.println();
         for (int i = 0; i < N; i++) {
-            System.out.format(" %c%d", 'a' + current[i], i+1);
+            if (current[i] < 26) {
+                System.out.format(" %c%d", 'a' + current[i], i+1);
+            } else {
+                System.out.format(" %c%c%d", 'a' + current[i]/26 - 1, 'a' + current[i]%26, i+1);
+            }
         }
         System.out.println();
 
