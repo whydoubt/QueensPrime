@@ -1,8 +1,26 @@
 public class App {
     public static void main(String[] args) {
-        int N = Integer.parseInt(args[0]);
+        if (args.length < 1) {
+            System.err.println("Parameter must be provided for N");
+            System.exit(1);
+        }
+
+        int N = 0;
+        try {
+            N = Integer.parseInt(args[0]);
+        } catch (NumberFormatException e) {
+            System.err.println("Parameter for N must an integer");
+            System.exit(1);
+
+        }
+
+        if (N < 2 || N > 26) {
+            System.err.println("Only a value from 2 to 26 is supported");
+            System.exit(1);
+        }
+
         Queens q = new Queens(N);
         q.solve();
-        q.reportAlgebraic();
+        q.report();
     }
 }
