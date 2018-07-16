@@ -26,6 +26,7 @@ represents an one occupied column in row 1.  Each depth-2 sub-node represents
 one occupied column in row 2, and so on.
 
 If the only rule was one queen per row, the number of leaves would be pow(N, N)  
+
 |N  |leaves        |
 |---|--------------|
 |4  |   256        |
@@ -36,6 +37,7 @@ If the only rule was one queen per row, the number of leaves would be pow(N, N)
 On an NxN board, with N queens, there must also be EXACTLY one per column.
 Adding this rule, and ignoring branches where this is not followed, reduces
 the number of leaves to factorial(N)
+
 |N  |leaves         |
 |---|---------------|
 |4  |     24        |
