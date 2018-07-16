@@ -17,7 +17,7 @@ As an example, to find a solution where N = 4, execute
 
 ## Brainstorming
 
-NOTE: This is conceptual and does not reflect the actal implementation.
+NOTE: This is conceptual and does not reflect the actual implementation.
 
 On an NxN board, with N queens, there must be EXACTLY one per row.
 
@@ -45,7 +45,7 @@ the number of leaves to factorial(N)
 |12 |479.001 * 10^6 |
 |16 | 20.923 * 10^12|
 
-The two regular diagonals may be uniqely identified as the sum and the
+The two regular diagonals may be uniquely identified as the sum and the
 difference of the row and column numbers.  That is, if queens sit on locations
 (0, 3) and (4, 7) then they share the 'difference' diagonal of -3, and if they
-sit on locatins (3, 4) and (1, 6) then they share the 'sum' diagonal of 7.
+sit on locations (3, 4) and (1, 6) then they share the 'sum' diagonal of 7.
